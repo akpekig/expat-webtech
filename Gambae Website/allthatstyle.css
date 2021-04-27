@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'EBSHunminjeongeumSBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSHunminjeongeum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  .topnav {
+    overflow: hidden;
+  }
+  
+.logo_top{
+    float: left;
+    height: 24px;
+    width: 170px;
+    margin: 0;
+}
+.gambae_top{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.18em;
+    color: #D19D76;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    }
+    
+    .dots_top{
+    width: 22px;
+    height: 22px;
+    background-color: #d19d76;
+    border-radius: 50%;
+    color: #d19d76;
+    align-self: center;
+    }
+  
+  /* Style the links inside the navigation bar */
+  .links {
+    float: right;
+    display: block;
+    color: #b77543;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #20150d;
+    color: #d19d76;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .welcome_text-container{
+      position: relative;
+  }
+
+  .img_edit{
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      object-position: 50% 25%;
+  }
+  .welcome_text{
+      position: absolute;
+      top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(32, 21, 13, 0.5);
+  width: 100%;
+  height: 550px;
+  align-self: center;
+  }
+
+  p{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-size: 17px;
+}
+  .writing{
+    position: absolute;
+    top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+text-align: center;
+font-family: 'EBSHunminjeongeumSBA';
+font-weight: normal;
+    font-style: normal;
+    color: white;
+font-size: 4em;
+}
+
+  .services_container{
+    width: 100%;
+
+    margin: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-gap: 0px;
+    
+  }
+  
+.footer-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 50px, auto, 10px;
+    background-color: #20150d;
+    color: #d19d76;
+  }
+  
+.gambae_logo{
+width: 180px;
+height: 24px;
+align-self: center;
+justify-self: center;
+padding-bottom: 24px;
+}
+
+.gambae{
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: bold;
+font-size: 1.6em;
+letter-spacing: 0.18em;
+color: #D19D76;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-self: center;
+justify-content: space-between;
+}
+
+.dots{
+width: 22px;
+height: 22px;
+background-color: #d19d76;
+border-radius: 50%;
+color: #d19d76;
+align-self: center;
+}
+
+.footer_text{
+max-width:75%;
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: lighter;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+text-align: center;
+letter-spacing: 0.03em;
+justify-self: center;
+align-self: center;
+color: #D19D76;
+padding: 0px 40px 0px 40px;
+}
+
+.book_button{
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+padding: 10px;
+padding-left: 80px;
+padding-right: 80px;
+min-width: 30%;
+max-width: 100%;
+border-radius: 50px 50px 50px 50px;
+justify-content: center;
+background-color: Transparent;
+background-repeat:no-repeat;
+overflow: hidden;
+outline:none;
+border-width: 2px;
+border-color: #D19D76;
+color: #D19D76;
+}
+
+.copyright{
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+text-align: center;
+letter-spacing: 0.03em;
+justify-self: center;
+align-self: center;
+}
+
+.service_card{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  
+border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+border-left: 1px solid rgba(38, 38, 38, 0.2);
+  display: block;
+  top: 0px;
+  position: relative;
+
+  padding: 32px 24px;
+
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+}
+
+.service_card p {padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;}
+
+  .service_card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #d19d76;
+    background-color: white;
+  }
+  .service_card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+  
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  .service_card:hover:before {
+    transform: scale(2.15);
+  }
+
+  .tick{
+    float: right;
+    top: 0px;
+  }
+
+  input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-color: #d19d76;
+  }
+
+  input[type=email] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-color: #d19d76;
+  }
+
+  textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    border-color: #d19d76;
+  }
+
+.email_form {
+  justify-content: center;
+  align-content: center;
+  grid-column: 1 / span 2;
+ padding: 15px;
+ padding-left: 100px;
+display: none;
+}
