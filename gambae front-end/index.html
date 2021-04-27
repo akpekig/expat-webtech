@@ -9,125 +9,34 @@
 	<meta name="description" content="Gambae, Main Page">
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<link href="dashboard.css" rel="stylesheet">
 	<!--Other-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+	</script>
+	<link href="styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <style>
-
-		@media (min-width: 992px) {
-			.px-md-auto {
-				padding-top: 2%;
-	  		padding-left: 33% !important;
-	  		padding-right: 33%  !important;
-			}
-		}
-
-		.hero {
-			background-color: black;
-			background-image: url("images/heroimage.jpg");
-		}
-
-		.hero-footer {
-			background-color: black;
-			background-image: url("images/herofooter.jpg");
-		}
-
-		.hero-overlay {
-			background-color: rgba(0, 0, 0, 0.7);
-			height: 500px;
-		}
-
-		.hero-text {
-			text-align: center;
-			position: relative;
-			top: 45%;
-		  color: white;
-		}
-
-		.card {
-			height: 20rem;
-		}
-
-		.card-body {
-			height: 50%;
-			top: 30%;
-			padding-left: 10%;
-			padding-right: 10%;
-			align-items: center;
-			position: relative;
-			text-align: center;
-		}
-
-		.footer {
-			background-color: #20150D;
-			color: #D19D76;
-		}
-
-		.footer-text {
-			font-size: 0.8rem;
-			line-height: 2;
-			align-items: center;
-		}
-
-		.footer-button {
-			background-color:transparent;
-			border-radius:36px;
-			border:2px solid #d19d76;
-			color:#d19d76;
-			font-size:1.1rem;
-			padding:0.5em 6em;
-		}
-
-		.footer-button:hover {
-			background-color:#d19d76;
-			color: #20150D;
-		}
-
-		.footer-button:active {
-			position:relative;
-			top:1px;
-		}
-
-		/*.px-md-auto {
-  		padding-left: 20% !important;
-  		padding-right: 20%  !important;
-		}*/
-
-
-		#navbarContent {
-
-		}
-
-		#hero-image {
-  		opacity: 0.5;
-  		height: 100%;
-			position: relative;
-  		background-position: center;
-  		background-size: cover;
-
-		}
-
       </style>
    </head>
    <body>
 		 <div>
 			 <!--NAVBAR-->
-			 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-				 <div class="container-fluid">
-					 <a class="navbar-brand" href="#">Gambae</a>
+			 <nav class="navbar navbar-expand-lg">
+				 <div class="container-fluid py-3 ms-3" id="navbar-container">
+					 <a class="navbar-brand" href="#"><span class="logo">Gambae ⬤ ⬤</span></a>
 					 <!--NAVBAR TOGGLE BUTTON-->
-					 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-						 <span class="navbar-toggler-icon"></span>
+					 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+						 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
 					 </button>
 					 <!--NAVBAR TOGGLE BUTTON END-->
 					 <!--NAVBAR ITEMS-->
-					 <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+					 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 						 <div class="p-2">
 						 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							 <li class="nav-item">
-								 <a class="nav-link" href="#">About Us</a>
+								 <a class="nav-link active" href="#">About Us</a>
 							 </li>
 							 <li class="nav-item">
 								 <a class="nav-link" href="#">Our Services</a>
@@ -139,7 +48,7 @@
 								 <a class="nav-link disabled">|</a>
 							 </li>
 							 <li class="nav-item">
-								 <a class="nav-link" href="#">EN / 한 / 中</a>
+								<span class="nav-link nav-item"><span class="en-translation">EN</span> / <span class="ko-translation" href="#">한</span> / <span class="ch-translation" href="#">中</span></span>
 							 </li>
 						 </ul>
 					 </div>
@@ -150,72 +59,115 @@
 			 <!--NAVBAR END-->
 			 <!--HERO CONTENT-->
 			 <div class="hero">
-				 	<div class="hero-overlay">
   		 			<div class="hero-text">
-    					<h4 class="p-2">What happens in a company without HR.</h4>
+							<h1 class="company_name" style="font-size:8rem; font-family: 'EBSHunminjeongeumSBA';"><b>감배</b></h1>
+    					<h6 class="p-2">Helping Clients Ride the Hallyu Wave in B2B and B2C.</h6>
   					</div>
-					</div>
 				</div>
 				<!--HERO CONTENT END-->
 				<!-- SERVICES SECTION -->
 				<div class="row row-cols-1 row-cols-md-2 g-0">
   				<div class="col">
     <div class="card">
+			<input class="tick" type="checkbox" id="eBook" name="service" value="yes" role="button" data-bs-toggle="collapse" data-bs-target="#contact_us"><label for="eBook"></label>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Korean eBook</h5>
+				<h6>£19.99</h6>
+        <p class="card-text">eBook on Korean local culture, resources for language learning, and money-saving tips.</p>
       </div>
     </div>
   </div>
   				<div class="col">
     <div class="card">
+			<input class="tick" type="checkbox" id="consultation" name="service" value="yes" role="button" data-bs-toggle="collapse" data-bs-target="#contact_us"><label for="consultation"></label>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Consultation</h5>
+				<h6>Free (10 minute consultation) <br /> or <br />£50 (45 min consultation) </h6>
+        <p class="card-text">Basic relocation consultation.</p>
       </div>
     </div>
   </div>
   				<div class="col">
     <div class="card">
+			<input class="tick" type="checkbox" id="match-making" name="service" value="yes" role="match-making" data-bs-toggle="collapse" data-bs-target="#contact_us"><label for="match-making"></label>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Match-making</h5>
+				<h6>£150</h6>
+        <p class="card-text">An hour match-making service based on client’s requirements: idea of location, property, estate agent resource-matching and industry insight/ rental process consultation.</p>
       </div>
     </div>
   </div>
   				<div class="col">
     <div class="card">
+			<input class="tick" type="checkbox" id="personal-consultant" name="service" value="yes" role="button" data-bs-toggle="collapse" data-bs-target="#contact_us"><label for="personal-consultant"></label>
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Personal Consultation</h5>
+				<h6>£175</h6>
+        <p class="card-text">The basic consultation, which is almost like a psychological assessment to create a customer profile, the match-making service, and the e-book. It's all the other services combined.</p>
       </div>
     </div>
   </div>
 				</div>
 				<!-- SERVICES SECTION END-->
+				<!-- EMAIL FORM-->
+				<form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm" id="form">
+					<div class="email_form my-5 py-5 mx-5 px-auto align-items-center collapse" id="contact_us">
+                <input type="text" size="19" id="contactName" name="Contact-Name" placeholder="Name"><br><br></input>
+                <input type="email" id="contactEmail" name="Contact-Email" placeholder="E-mail"><br><br> </input>
+								<input readonly class="form-control-plaintext" id="eBook" value="• eBook">
+								<input readonly class="form-control-plaintext" id="consultation" value="• consultation">
+								<input readonly class="form-control-plaintext" id="match-making" value="• match-making">
+								<input readonly class="form-control-plaintext" id="personal-consultant" value="• personal-consultant"><br><br>
+								<input type="text" id="contactNumber" name="Contact-Number" placeholder="Number"><br><br> </input>
+                <textarea name="Contact-Message" id="contactMessage" rows="6″ cols="20″ placeholder="Message"></textarea><br><br>
+                <button type="submit" value="Submit" class="footer-button">Send</button>
+							</div>
+					</form>
+
+				<!-- EMAIL FORM END -->
 				<!--HERO FOOTER CONTENT-->
-				<div class="hero-footer">
- 				 	<div class="hero-overlay">
-   		 			<div class="hero-text align-items-center">
-     					<h4 class="p-2">You're welcome.</h4>
+				<div class="col">
+					<div class="row">
+
+	 				 	<div class="hero-overlay-side hero-overlay-left col">
+	   		 			<div class="hero-footer-text align-items-center">
+	     					<span class="p-2">Culture</span>
+	   					</div>
+	 				</div>
+
+
+				<div class="hero-footer col-md-6 order-md-2 order-3">
+   		 			<div class="hero-footer-text align-items-center">
+     					<span class="p-2">History</span>
    					</div>
- 					</div>
  				</div>
+
+				<div class="hero-overlay-side hero-overlay-right col order-sm-12 order-2">
+					<div class="hero-footer-text align-items-center">
+						<span class="p-2">Parks & Nature</span>
+					</div>
+					</div>
+
+				</div>
+			</div>
  				<!--HERO FOOTER END-->
 				<!--FOOTER CONTENT-->
 				<div class="footer text-md-center py-5 px-5">
-     					<h3>GAMBAE</h3>
-							<!-- Gaddafi Ipusm ; http://gaddafipsum.com/-->
+     					<h3><span class="logo">Gambae ⬤ ⬤</span></h3>
+							<!-- Gaddafi Ipsum ; http://gaddafipsum.com/-->
 							<p class="footer-text px-md-auto">Even publicly-owned establishments give workers wages as well as other social benefits, similar to the charity endowed by the rich owners of economic establishments upon those who work for them
 								Rather, everyone has the right to beneficially utilize it by working, farming or pasturing as long as he and his heirs live on it, to satisfy their needs, but without employing others with or without a wage.
 							</p>
 							<!-- -->
-							<button class="footer-button">Contact Us</button>
-							<p style="padding-top: 2rem;">
-							<h6>GAMBAE ©2021 All Rights Reserved</h6>
+							<button class="footer-button my-md-4">CONTACT US</button>
+							<p>
+							<h6 class="copyright">GAMBAE ©2021 ALL RIGHTS RESERVED</h6>
 						</p>
  				</div>
  				<!--FOOTER END-->
 		 </div>
 	 	</body>
+			 <!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous" type="text/javascript">
+		</script>
 	 </html>
